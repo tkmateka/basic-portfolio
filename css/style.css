@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #FF6464;
+    --primary-dark: #f91b1b;
+    --white: #FFFFFF;
+    --blue: #00A8CC;
+    --light-blue: #EDF7FA;
+    --light-grey: #E0E0E0;
+    --black: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+    height: 100vh;
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.profile-image {
+    max-width: 200px;
+    min-width: 150px;
+    width: 100%;
+}
+
+/* colors */
+.primary {
+    color: var(--primary);
+}
+.blue {
+    color: var(--blue);
+}
+
+.light-blue-bg {
+    background-color: var(--light-blue);
+}
+
+.light-grey {
+    color: var(--light-grey);
+}
+
+/* Flex */
+.column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.start_center {
+    justify-content: start;
+    align-items: center;
+}
+
+.end-center {
+    justify-content: end;
+    align-items: center;
+}
+
+.center_center {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-between_center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gaps */
+.gap-1em {
+    gap: 1em;
+}
+
+/* Nav */
+nav {
+    height: 70px;
+}
+
+.nav-container a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--black);
+
+    &:hover {
+        cursor: grab;
+        color: var(--primary);
+    }
+}
+
+/* Width */
+.width-25 {
+    width: 25%;
+}
+
+.width-35 {
+    width: 35%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+/* Height */
+.full-height {
+    height: 100%;
+}
+
+.height-250px {
+    height: 250px;
+}
+
+.height-350px {
+    height: 350px;
+}
+
+/* margins */
+.no-margin {
+    margin: 0;
+}
+
+.margin-right-2em {
+    margin-right: 2em;
+}
+
+/* paddings */
+.padding-20px-0 {
+    padding: 20px 0;
+}
+.padding-bottom-20px {
+    padding-bottom: 20px;
+}
+
+/* Fonts */
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+.font-2_5em {
+    font-size: 2.5em;
+}
+
+/* Text */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: end;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.primary-btn {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+/* Main */
+.main-container {
+    height: calc(100% - 70px);
+    overflow-y: auto;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 0 20px 20px;
+}
+
+.border-bottom-1px {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.chip {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+
+.close {
+    font-size: 24px !important;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}

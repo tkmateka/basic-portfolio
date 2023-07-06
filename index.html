@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="flex end-center">
+            <div class="flex nav-container gap-1em margin-right-2em hide-on-mobile">
+                <a href="./html/blog.html">Blog</a>
+                <a>Works</a>
+                <a>Contact</a>
+            </div>
+
+            <i class="fa fa-bars show-block-mobile margin-right-2em pointer" onclick="toggleMenu('open')"></i>
+        </nav>
+        <div class="main-container">
+            <!-- Section A -->
+            <section class="flex center_center height-350px reset-height">
+                <div class="width-80 flex space-between_center column-reverse">
+                    <div class="width-70 mobile-text-center mobile-full-width">
+                        <h2>Hi, I am Tukiso,<br> Full-Stack JavaScript Developer</h2>
+                        <p class="font-14">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                        <button class="btn primary-btn">Download Resume</button>
+                    </div>
+                    <div class="width-25 mobile-full-width mobile-text-center">
+                        <img src="./images/profile.jpg" alt="profile picture" height="200" class="round profile-image">
+                    </div>
+                </div>
+            </section>
+            <!-- Section B -->
+            <section class="flex column center_center light-blue-bg padding-bottom-20px">
+                <div class="width-80 flex space-between_center mobile-center-center">
+                    <p>Recent posts</p>
+                    <p class="text-right font-12"><a class="blue hide-on-mobile" href="">View All</a></p>
+                </div>
+                <div class="width-80 flex space-between gap-1em mobile-column">
+                    <div class="card">
+                        <h3>Making a design system from scratch</h3>
+                        <p>12 Feb 2020 | Design, Pattern</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Creating pixel perfect icons in Figma</h3>
+                        <p>12 Feb 2020 | Design, Pattern</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section C -->
+            <section class="flex center_center">
+                <div class="width-80 flex column gap-1em">
+                    <p class="mobile-text-center">Featured works</p>
+
+                    <!-- work 1 -->
+                    <div class="flex space-between border-bottom-1px gap-1em mobile-column mobile-text-center">
+                        <div>
+                            <img src="./images/work1.png" alt="work 1">
+                        </div>
+                        <div>
+                            <h3 class="no-margin">Designing Dashboards</h3>
+                            <div class="flex start_center mobile-center-center gap-1em">
+                                <div class="chip font-12">2020</div>
+                                <p class="light-grey">Dashboard</p>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <!-- work 2 -->
+                    <div class="flex space-between border-bottom-1px gap-1em mobile-column mobile-text-center">
+                        <div>
+                            <img src="./images/work2.png" alt="work 2">
+                        </div>
+                        <div>
+                            <h3 class="no-margin">Vibrant Portraits of 2020</h3>
+                            <div class="flex start_center mobile-center-center gap-1em">
+                                <div class="chip font-12">2018</div>
+                                <p class="light-grey">Illustration</p>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <!-- work 3 -->
+                    <div class="flex space-between border-bottom-1px gap-1em mobile-column mobile-text-center">
+                        <div>
+                            <img src="./images/work3.png" alt="work 3">
+                        </div>
+                        <div>
+                            <h3 class="no-margin">36 Days of Malayalam type</h3>
+                            <div class="flex start_center mobile-center-center gap-1em">
+                                <div class="chip font-12">2018</div>
+                                <p class="light-grey">Typography</p>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="flex center_center height-250px">
+                <div>
+                    <div class="flex space-between_center">
+                        <img src="./images/social-media/fb.png" alt="facebook">
+                        <img src="./images/social-media/insta.png" alt="instagram">
+                        <img src="./images/social-media/twitter.png" alt="twitter">
+                        <img src="./images/social-media/Linkedin.png" alt="Linkedin">
+                    </div>
+                    <p class="font-12">Copyright ©2020 All rights reserved</p>
+                </div>
+            </footer>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <i class="fa fa-close show-block-mobile pointer close" onclick="toggleMenu('close')"></i>
+
+            <div class="flex column nav-container gap-1em center_center full-height">
+                <a href="./html/blog.html">Blog</a>
+                <a>Works</a>
+                <a>Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

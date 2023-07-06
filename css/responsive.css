@@ -1,0 +1,42 @@
+.show-block-mobile,
+.show-flex-mobile {
+    display: none !important;
+}
+
+/* From 0 to 690 */
+@media only screen and (max-width: 690px) { 
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .show-flex-mobile {
+        display: flex;
+    }
+    .show-block-mobile {
+        display: block !important;
+    }
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+    .mobile-column {
+        flex-direction: column;
+    }
+    .reset-height {
+        height: unset;
+        padding: 2em 0;
+    }
+    .mobile-text-center {
+        text-align: center;
+    }
+    .mobile-full-width {
+        width: 100%;
+    }
+    .mobile-center-center {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Between 690 and 901 */
+@media only screen and (min-width: 691px) and (max-width: 900px) {
+    /* Tablet styles */
+}
